@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  background: white;
+  padding: 30px;
+  width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #764ba2;
+}
+
+.task-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.task-input input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.task-input button {
+  padding: 8px 12px;
+  border: none;
+  background-color: #764ba2;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.task-input button:hover {
+  background-color: #5a3794;
+}
+
+.filter-buttons {
+  margin-bottom: 15px;
+}
+
+.filter-buttons button {
+  margin: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #ddd;
+}
+
+.filter-buttons button:hover {
+  background-color: #bbb;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f4f4f4;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+}
+
+.task-item.completed span {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.delete-btn {
+  background: crimson;
+  border: none;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: darkred;
+}
+
+.empty {
+  color: gray;
+}
